@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <!-- GENERAL -->
+    <category label="30000">
+        <setting label="30001" type="lsep" />
+        <setting label="30002" id="subsonic_url" type="text"  default="http://demo.subsonic.org"/>
+        <setting label="30003" id="username" type="text" default="guest3"/>
+        <setting label="30004" id="password" type="text" option="hidden"  default="guest"/>
+
+        <setting label="30010" type="lsep" />
+		<setting label="30011" id="albums_per_page" type="labelenum"  default="50" values="10|25|50|100|250|500"/>
+        <setting label="30012" id="tracks_per_page" type="labelenum"  default="100" values="10|25|50|100|250|500"/>
+        <setting label="30013" id="coverart_first" type="bool"  default="true"/>
+        <setting label="30014" id="merge_folders" type="bool"  default="true"/>
+        <setting label="30015" id="view_genre" type="bool"  default="true"/>
+        
+        <setting label="30020" id="view_artist" type="text"  default="50"/>
+        <setting label="30021" id="view_album" type="text"  default="50"/>
+        <setting label="30022" id="view_song" type="text"  default="50"/>
+        <setting label="30023" id="top_songs" type="labelenum"  default="both" values="album|menu|both|none"/>
+        <setting label="30024" id="artist_radio" type="labelenum"  default="both" values="album|menu|both|none"/>
+        <setting label="30025" id="similar" type="labelenum"  default="both" values="album|menu|both|none"/>
+        <setting label="30026" id="coverart_from_server" type="bool"  default="true"/>
+
+        <setting label="30030" type="lsep" />
+        <setting label="30031" id="download_folder"  type="folder"  source="auto" option="writeable"/>
+        
+        <setting label="30040" type="lsep" />
+        <setting label="30041" id="transcode_format_streaming" type="labelenum"  default="raw" values="mp3|raw|flv|ogg"/>
+        <setting label="30042" id="bitrate_streaming" type="labelenum" default="320" values="320|256|224|192|160|128|112|96|80|64|56|48|40|32"/>
+    </category>
+    
+    <!-- ADVANCED -->
+  	<category label="30050">
+        <setting label="30001" type="lsep" />
+        <setting label="30051" id="apiversion" type="labelenum"  values="1.11.0|1.12.0|1.13.0|1.14.0" default="1.14.0"/>
+		<setting label="30052" id="insecure" type="bool"  default="false" />
+		
+	</category>
+</settings>
