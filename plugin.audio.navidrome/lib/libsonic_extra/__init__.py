@@ -147,7 +147,7 @@ class SubsonicClient(libsonic.Connection):
 
         def _artists_iterator(artists):
             for artist in force_list(artists):
-                artist["id"] = int(artist["id"])
+                artist["id"] = artist["id"]
                 yield artist
 
         def _index_iterator(index):
@@ -217,7 +217,7 @@ class SubsonicClient(libsonic.Connection):
 
         def _songs_iterator(songs):
             for song in force_list(songs):
-                song["id"] = int(song["id"])
+                song["id"] = song["id"]
                 yield song
 
         response = super(SubsonicClient, self).getAlbum(*args, **kwargs)
@@ -249,7 +249,7 @@ class SubsonicClient(libsonic.Connection):
 
         def _song_iterator(songs):
             for song in force_list(songs):
-                song["id"] = int(song["id"])
+                song["id"] = song["id"]
                 yield song
 
         response = super(SubsonicClient, self).getStarred(*args, **kwargs)
