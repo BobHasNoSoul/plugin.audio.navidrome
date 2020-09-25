@@ -3,7 +3,7 @@
     <!-- GENERAL -->
     <category label="30000">
         <setting label="30001" type="lsep" />
-        <setting label="30002" id="subsonic_url" type="text"  default="http://demo.navidrome.org"/>
+        <setting label="30002" id="subsonic_url" type="text"  default="https://demo.navidrome.org"/>
         <setting label="30003" id="username" type="text" default="demo"/>
         <setting label="30004" id="password" type="text" option="hidden"  default="demo"/>
 
