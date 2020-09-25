@@ -3,9 +3,9 @@
     <!-- GENERAL -->
     <category label="30000">
         <setting label="30001" type="lsep" />
-        <setting label="30002" id="subsonic_url" type="text"  default="http://demo.subsonic.org"/>
-        <setting label="30003" id="username" type="text" default="guest3"/>
-        <setting label="30004" id="password" type="text" option="hidden"  default="guest"/>
+        <setting label="30002" id="subsonic_url" type="text"  default="http://demo.navidrome.org"/>
+        <setting label="30003" id="username" type="text" default="demo"/>
+        <setting label="30004" id="password" type="text" option="hidden"  default="demo"/>
 
         <setting label="30010" type="lsep" />
 		<setting label="30011" id="albums_per_page" type="labelenum"  default="50" values="10|25|50|100|250|500"/>
@@ -33,7 +33,7 @@
     <!-- ADVANCED -->
   	<category label="30050">
         <setting label="30001" type="lsep" />
-        <setting label="30051" id="apiversion" type="labelenum"  values="1.11.0|1.12.0|1.13.0|1.14.0" default="1.14.0"/>
+        <setting label="30051" id="apiversion" type="labelenum"  values="1.11.0|1.12.0|1.13.0|1.14.0" default="1.12.0"/>
 		<setting label="30052" id="insecure" type="bool"  default="false" />
 		
 	</category>
