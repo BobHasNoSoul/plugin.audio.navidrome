@@ -1089,7 +1089,7 @@ def stars_cache_update(ids,remove=False):
     
     #parse items
     for item_id in ids:
-        item_id = int(item_id)
+        item_id = item_id
         if not remove:
             starred.add(item_id)
         else:
