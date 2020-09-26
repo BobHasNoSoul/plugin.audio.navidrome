@@ -39,7 +39,7 @@ Here you can see the plugin in the skin called "Bingie"
 
 ## Alternative Installation
 * Navigate to your `.kodi/addons/` folder
-* Clone this repository: `git clone https://github.com/jeweet/plugin.audio.subsonic.git`
+* Clone this repository: `git clone https://github.com/BobHasNoSoul/plugin.audio.navidrome.git`
 * (Re)start Kodi.
 
 ## License
