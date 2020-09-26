@@ -1,4 +1,4 @@
-## Navidrome
+## Navidrome Kodi Plugin
 
 A Navidrome plugin for kodi that allows you to play all of your awesome music from a self-hosted lightweight navidrome server.
 This plugin was originally forked from a previous subsonic plugin that is incompatable with the current navidrome servers
@@ -19,6 +19,19 @@ https://github.com/jeweet/plugin.audio.subsonic
 * Browse by artist, albums (newest/most played/recently played/random), tracks (starred/random), and playlists
 * Download songs
 * Star songs
+
+## Screenshots
+Here you can see the plugin in its default skin
+![screenshot](https://github.com/BobHasNoSoul/plugin.audio.navidrome/blob/master/screenshots/default/1.PNG?raw=true)
+![screenshot](https://github.com/BobHasNoSoul/plugin.audio.navidrome/blob/master/screenshots/default/2.PNG?raw=true)
+![screenshot](https://github.com/BobHasNoSoul/plugin.audio.navidrome/blob/master/screenshots/default/3.PNG?raw=true)
+![screenshot](https://github.com/BobHasNoSoul/plugin.audio.navidrome/blob/master/screenshots/default/4.PNG?raw=true)
+
+Here you can see the plugin in the skin called "Bingie"
+![screenshot](https://github.com/BobHasNoSoul/plugin.audio.navidrome/blob/master/screenshots/bingie/1.PNG?raw=true)
+![screenshot](https://github.com/BobHasNoSoul/plugin.audio.navidrome/blob/master/screenshots/bingie/2.PNG?raw=true)
+![screenshot](https://github.com/BobHasNoSoul/plugin.audio.navidrome/blob/master/screenshots/bingie/3.PNG?raw=true)
+![screenshot](https://github.com/BobHasNoSoul/plugin.audio.navidrome/blob/master/screenshots/bingie/4.PNG?raw=true)
 
 ## Installation
 * Download the release zip
