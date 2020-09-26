@@ -7,6 +7,8 @@ This plugin was originally forked from a previous subsonic plugin that is incomp
 
 DISCLAIMER: I did not write the entire plugin or server backend I merely fixed the plugin to allow it to work and updated it to have a more navidrome specific look and feel (it also breaks the connection to subsonic servers to allow navidrome)
 
+### Please note this supports TLS v1 only at the moment, I am looking into upgrading it to tls 1.3 and 1.2 but with kodi being the main constraint here it may take a while.
+
 This plugins github: 
 https://github.com/BobHasNoSoul/plugin.audio.navidrome
 
@@ -19,8 +21,6 @@ https://github.com/jeweet/plugin.audio.subsonic
 * Star songs
 
 ## Installation
-# Please note you will need to download and install script.module.dateutil 2.4.2 before trying to install
-* Download the script.module.dateutil 2.4.2 zip and install that first
 * Download the release zip
 * install the plugin via zip
 
