@@ -8,12 +8,14 @@ This plugin was originally forked from a previous subsonic plugin that is incomp
 DISCLAIMER: I did not write the entire plugin or server backend I merely fixed the plugin to allow it to work and updated it to have a more navidrome specific look and feel (it also breaks the connection to subsonic servers to allow navidrome)
 
 ### Please note this supports TLS v1 only at the moment, I am looking into upgrading it to tls 1.3 and 1.2 but with kodi being the main constraint here it may take a while.
-
-This plugins github: 
-https://github.com/BobHasNoSoul/plugin.audio.navidrome
-
-forked from this plugin:
-https://github.com/jeweet/plugin.audio.subsonic
+If you are using Caddy please enable tls 1.0 as documented here https://caddyserver.com/docs/caddyfile/directives/tls or by using something like the following syntax in your caddyfile
+```
+tls xxx@xxx.com {
+    protocols tls1.0 tls1.2
+    ciphers some_tls_1.0_1.1_ciphers
+}
+```
+*The above syntax may differ depending on the version of caddy you are using V1/V2*
 
 ## Features
 * Browse by artist, albums (newest/most played/recently played/random), tracks (starred/random), and playlists
@@ -34,13 +36,28 @@ Here you can see the plugin in the skin called "Bingie"
 ![screenshot](https://github.com/BobHasNoSoul/plugin.audio.navidrome/blob/master/screenshots/bingie/4.PNG?raw=true)
 
 ## Installation
-* Download the release zip
-* install the plugin via zip
+* Download the release zip.
+* Install the plugin via zip.
+* Configure plugin with the server address in the following format `https://example.com` or if you are using a local ip `http://192.168.1.x:4533`.
+* Configure plugin with a user that has been created in the navidrome server (you cannot create accounts with this plugin).
 
 ## Alternative Installation
-* Navigate to your `.kodi/addons/` folder
-* Clone this repository: `git clone https://github.com/BobHasNoSoul/plugin.audio.navidrome.git`
+* Navigate to your `.kodi/addons/` folder.
+* Clone this repository: `git clone https://github.com/BobHasNoSoul/plugin.audio.navidrome.git`.
 * (Re)start Kodi.
+* Configure plugin with the server address in the following format `https://example.com` or if you are using a local ip `http://192.168.1.x:4533`.
+* Configure plugin with a user that has been created in the navidrome server (you cannot create accounts with this plugin).
+
+## FAQ
+
+*I Don't have a navidrome server, Where can I get one?*
+You can get one by grabbing the server binary or compiling your own from navidrome.org (not to mention all the documentation, discord links etc)
+
+*It wont connect, it just says "Connection Error"*
+This could be any number of things but try the following:
+- Check your server can be reached on a system outside of your host machine (like a phone or tablet via the ip:4533 in a web browser) if it cannot check your firewall on your host machine.
+- Check your details are correct in the plugin, in the plugin the details are case-sensitive and http:// or https:// does matter if you have ssl it should be https:// if you do not it should be http://
+- If you have a self-signed certificate, go to the advanced tab in the settings for the plugin and enable the self-signed option.
 
 ## License
 See the `LICENSE` file.
