@@ -1,3 +1,8 @@
+# UPDATE 28th dec 2020
+# due to personal issues i will no longer be maintaining this repo, i will archive this to read only so others may find this useful.
+# many thanks and stay safe.
+# - BobHasNoSoul
+
 ## Navidrome Kodi Plugin
 
 A Navidrome plugin for kodi that allows you to play all of your awesome music from a self-hosted lightweight navidrome server.
